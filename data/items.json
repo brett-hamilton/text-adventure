@@ -1,0 +1,44 @@
+[
+  {
+    "id": "health_potion",
+    "name": "Health Potion",
+    "description": "A bubbling red potion that restores 30 HP.",
+    "type": "Potion",
+    "value": 30
+  },
+  {
+    "id": "iron_sword",
+    "name": "Iron Sword",
+    "description": "A sturdy iron blade. +8 Attack when equipped.",
+    "type": "Weapon",
+    "value": 8
+  },
+  {
+    "id": "leather_armor",
+    "name": "Leather Armor",
+    "description": "Basic protection made from tanned hide. +5 Defense when equipped.",
+    "type": "Armor",
+    "value": 5
+  },
+  {
+    "id": "silver_sword",
+    "name": "Silver Sword",
+    "description": "A gleaming silver blade, deadly against the undead. +15 Attack when equipped.",
+    "type": "Weapon",
+    "value": 15
+  },
+  {
+    "id": "chain_mail",
+    "name": "Chain Mail",
+    "description": "Interlocking metal rings provide solid protection. +10 Defense when equipped.",
+    "type": "Armor",
+    "value": 10
+  },
+  {
+    "id": "vault_key",
+    "name": "Vault Key",
+    "description": "An ancient key etched with dark runes. It hums with power.",
+    "type": "Key",
+    "value": 0
+  }
+]
