@@ -1,8 +1,7 @@
-#include <print>
+#include "game.hpp"
 
-int main()
-{
-	std::print("Hello, text-based adventure game!\n");	
-
-	return 0;	
+int main() {
+    Game game;
+    game.run();
+    return 0;
 }
