@@ -1,0 +1,99 @@
+{
+  "start_room": "entrance",
+  "rooms": [
+    {
+      "id": "entrance",
+      "name": "Dungeon Entrance",
+      "description": "You stand at the entrance of a dark, foreboding dungeon. Cold air seeps from the stone walls, and the faint sound of dripping water echoes ahead. A narrow corridor stretches to the north, and a passage leads east to what looks like an armory.",
+      "exits": {
+        "north": "corridor",
+        "east": "armory"
+      },
+      "item_ids": [],
+      "enemy": null
+    },
+    {
+      "id": "armory",
+      "name": "Armory",
+      "description": "Racks of rusted weapons line the walls of this old armory. Most are beyond use, but a few items still look serviceable. A passage leads west back to the entrance, and stairs lead north to a guard room.",
+      "exits": {
+        "west": "entrance",
+        "north": "guard_room"
+      },
+      "item_ids": ["iron_sword", "leather_armor"],
+      "enemy": null
+    },
+    {
+      "id": "corridor",
+      "name": "Dark Corridor",
+      "description": "A long, dimly lit corridor stretches before you. Scratch marks cover the walls, and you notice small bones scattered on the floor. The passage continues north toward a crypt, and the entrance lies to the south.",
+      "exits": {
+        "south": "entrance",
+        "north": "crypt"
+      },
+      "item_ids": [],
+      "enemy": {
+        "id": "giant_rat",
+        "name": "Giant Rat",
+        "hp": 20,
+        "attack": 5,
+        "defense": 2,
+        "loot_id": "health_potion"
+      }
+    },
+    {
+      "id": "guard_room",
+      "name": "Guard Room",
+      "description": "This room once served as a guard post. A broken table sits in the corner, and old torches hang from the walls. Passages lead south to the armory and west toward a crypt.",
+      "exits": {
+        "south": "armory",
+        "west": "crypt"
+      },
+      "item_ids": [],
+      "enemy": {
+        "id": "goblin",
+        "name": "Goblin",
+        "hp": 30,
+        "attack": 8,
+        "defense": 3,
+        "loot_id": "health_potion"
+      }
+    },
+    {
+      "id": "crypt",
+      "name": "Ancient Crypt",
+      "description": "Crumbling stone sarcophagi line the walls of this ancient crypt. The air is thick with dust and the smell of decay. A heavy iron door to the north bears strange runes — it leads to the Shadow Vault. Passages lead south to the corridor and east to the guard room.",
+      "exits": {
+        "south": "corridor",
+        "east": "guard_room",
+        "north": "shadow_vault"
+      },
+      "item_ids": ["silver_sword"],
+      "enemy": {
+        "id": "skeleton",
+        "name": "Skeleton",
+        "hp": 40,
+        "attack": 10,
+        "defense": 5,
+        "loot_id": "vault_key"
+      }
+    },
+    {
+      "id": "shadow_vault",
+      "name": "Shadow Vault",
+      "description": "You enter a vast underground chamber. Dark energy crackles through the air, and shadows writhe along the walls. At the center of the vault, a towering figure of living darkness turns to face you — the Shadow Lord.",
+      "exits": {
+        "south": "crypt"
+      },
+      "item_ids": [],
+      "enemy": {
+        "id": "shadow_lord",
+        "name": "Shadow Lord",
+        "hp": 80,
+        "attack": 18,
+        "defense": 10,
+        "loot_id": ""
+      }
+    }
+  ]
+}
